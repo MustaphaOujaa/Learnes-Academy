@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+.navbar-wrapper {
+  background-color: #FFF5F0; 
+  padding: 20px 5%;
+  width: 90%;
+}
+
+.navbar-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch; /* باش العناصر كاملين ياخدو نفس الطول */
+  background: white;
+  border: 2px solid #1A1A1A; /* الإطار الخارجي الأسود */
+  border-radius: 12px;
+  overflow: hidden; /* باش الخلفيات ما تخرجش على الإطار */
+}
+
+/* 1. قسم اللوغو */
+.logo-section {
+  background-color: #FF8A5B; /* لون برتقالي غامق */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  border-right: 2px solid #1A1A1A;
+  color: #1A1A1A;
+}
+
+.logo-text {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* 2. الفراغ اللي ف الوسط */
+.nav-spacer {
+  flex-grow: 1; /* كياخد كاع المساحة الخاوية */
+}
+
+/* 3. منيو الروابط */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 2px solid #1A1A1A;
+}
+
+.nav-menu li {
+  border-right: 2px solid #1A1A1A;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: 600;
+  padding: 0 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* الرابط النشط (Home) باللون البيج فاتح */
+.nav-menu li.active {
+  background-color: #FFF0E5;
+}
+
+/* 4. زر Contact في الأخير */
+.nav-contact {
+  background-color: #FFB088; /* برتقالي فاتح */
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nav-contact a {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Hover Effects */
+.nav-menu li a:hover {
+  background-color: #FFF0E5;
+}

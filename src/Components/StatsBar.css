@@ -1,0 +1,55 @@
+.stats-container {
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #F0F0F0;
+  border-radius: 15px; /* حواف دائرية */
+  padding: 20px 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* ظل خفيف بزاف */
+  width: fit-content; /* كياخد المساحة اللي محتاج فقط */
+  margin-top: 30px;
+}
+
+.stat-item {
+  padding: 0 30px;
+  text-align: left;
+}
+
+/* هاد الكود كيزيد خط عمودي بين العناصر ما عدا الأخير */
+.stat-item:not(:last-child) {
+  border-right: 1px solid #F0F0F0;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #333;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive:mobile*/
+@media (max-width: 600px) {
+  .stats-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  .stat-item {
+    border-right: none !important;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 10px;
+    width: 80%;
+    text-align: center;
+  }
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+}

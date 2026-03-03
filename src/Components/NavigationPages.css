@@ -1,0 +1,123 @@
+.nav-pages-container {
+  background-color: #FFF5F0; /* لون الخلفية البيج */
+  padding: 80px 10%;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border: 2px solid #1A1A1A;
+  border-radius: 8px;
+  background: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1A1A1A;
+}
+
+.sub-text {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #4C4C4C;
+  line-height: 1.6;
+}
+
+/* الشبكة 2x2 */
+.pages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* الكارط الأساسية */
+.page-card {
+  background: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 10px 10px 0px #1A1A1A; /* الظل القاسي المميز */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.page-card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* ستايل الخط المقطع */
+.divider-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #1A1A1A;
+  border-radius: 50%;
+  background: white;
+}
+
+.dashed-line {
+  flex-grow: 1;
+  height: 2px;
+  background-image: linear-gradient(to right, #FF8A5B 70%, rgba(255,255,255,0) 0%);
+  background-position: center;
+  background-size: 25px 2px; /* كيعطي شكل التقطيع البرتقالي */
+  background-repeat: repeat-x;
+}
+
+.page-desc {
+  color: #4C4C4C;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* زر Learn More العريض */
+.learn-more-btn {
+  width: 100%;
+  background-color: #FFE5D9;
+  border: 2px solid #1A1A1A;
+  padding: 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.learn-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 0px #1A1A1A;
+  background-color: #FFD6C5;
+}
+
+/* Responsive للتلفونات */
+@media (max-width: 1024px) {
+  .pages-grid {
+    grid-template-columns: 1fr;
+  }
+}
