@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+
+.hero-section {
+  background-color: #FFF9F5; /* اللون الكريمي للخلفية */
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.hero-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid #262626; /* إطار أسود واضح */
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 80px 50px;
+  box-shadow: 6px 6px 0px 0px #262626; /* ظل صلب أسود */
+  overflow: hidden; /* ضروري لإخفاء أطراف المربعات */
+}
+
+/* ستايل المربعات (Pattern) */
+.hero-pattern {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  transform: rotate(0deg); /* يمكنك تغييرها لـ -5deg إذا أردت ميلاً خفيفاً */
+}
+
+.pattern-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  width: 25px;
+  height: 25px;
+  margin: 1px;
+}
+
+.square.black { background-color: #262626; }
+.square.orange { background-color: #FFBE99; }
+
+/* توزيع المحتوى */
+.hero-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1.2;
+}
+
+/* Badge 'Overview' */
+.badge-container {
+  margin-bottom: 20px;
+}
+
+.overview-badge {
+  border: 1.5px solid #262626;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* العنوان الرئيسي */
+.hero-title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #262626;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* الفقرة الجانبية */
+.hero-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4C4C4C;
+  margin: 0;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 900px) {
+  .hero-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-card {
+    padding: 60px 20px;
+  }
+  
+  .hero-title {
+    font-size: 30px;
+  }
+}

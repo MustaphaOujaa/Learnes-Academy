@@ -1,23 +1,23 @@
-import Benefits from "./Components/Benefits";
-import Navbar from './Components/Navbar'
-import Hero from "./Components/Hero";
-import Testimonials from "./Components/Testimonials";
-import FAQ from "./Components/FAQ";
-import Footer from "./Components/Footer";
-import NavigationPages from "./Components/NavigationPages.JSX";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from './Pages/About'
+
 
 function App() {
   return (
     <div className="App">
-     
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <Testimonials />
-      <FAQ />
-      <NavigationPages />
-      <Footer />
-
+    <Navbar />
+      
+      <Routes>
+        
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        
+      </Routes>
+    
+    <Footer />
     </div>
   );
 }

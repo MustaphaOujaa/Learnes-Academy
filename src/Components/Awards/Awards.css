@@ -1,0 +1,72 @@
+/* الحاوية الكبيرة */
+.awards-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #FFF9F5;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة متساوية */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto 0;
+}
+
+/* ستايل الكارت */
+.award-card {
+  background: #FFFFFF;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  padding: 60px 35px 35px; /* Padding علوي كبير للأيقونة */
+  box-shadow: 8px 8px 0px 0px #262626; /* ظل أسود صلب بدون تغبيش */
+  position: relative;
+  text-align: left;
+}
+
+/* الأيقونة اللي خارجة من الفوق */
+.award-icon-wrapper {
+  position: absolute;
+  top: -2px; /* باش تغطي الخط الفوقاني */
+  left: 35px;
+  background-color: #FFBE99; /* لون برتقالي فاتح */
+  border: 2px solid #262626;
+  border-top: none; /* حيت لاصقة في الحافة */
+  padding: 12px;
+  border-radius: 0 0 10px 10px; /* دائرية من التحت فقط */
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.award-icon-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+/* النصوص */
+.award-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.award-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4C4C4C;
+  margin: 0;
+}
+
+/* التجاوب مع الموبايل */
+@media (max-width: 992px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #FFF9F5;
+  --text-dark: #262626;
+  --text-gray: #4C4C4C;
+  --orange-light: #FFBE99;
+  --border-black: #262626;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* الكارت الأساسي بظله الصلب */
+.custom-card {
+  background: #fff;
+  border: 2px solid var(--border-black);
+  border-radius: 12px;
+  box-shadow: 8px 8px 0px 0px var(--border-black);
+  position: relative;
+}
+
+/* ستايل المربعات (Pattern) */
+.pattern-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 18px);
+  z-index: 1;
+}
+
+.pattern-square {
+  width: 18px;
+  height: 18px;
+}
+
+.pattern-square.orange { background-color: var(--orange-light); border: 0.1px solid rgba(0,0,0,0.05); }
+.pattern-square.black { background-color: var(--border-black); }
+
+/* تنسيق الـ Hero */
+.hero-section {
+  padding: 80px 5%;
+}
+
+.hero-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.badge {
+  border: 1px solid var(--border-black);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.hero-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-gray);
+}
+
+/* تنسيق Mission & Vision */
+.mission-section {
+  text-align: center;
+  padding: 40px 5%;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.mission-card {
+  padding: 50px;
+  text-align: left;
+}
+
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mission-header h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.mission-icon {
+  width: 60px;
+}

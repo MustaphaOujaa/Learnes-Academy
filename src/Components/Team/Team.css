@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+.team-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #FFF9F5;
+  font-family: 'Outfit', sans-serif;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* جوج كارتات في السطر بحال الصورة */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+}
+
+.team-card {
+  background: #ffffff;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 6px 6px 0px 0px #262626;
+  position: relative;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1.5px solid #262626;
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #262626;
+}
+
+.social-icon-box {
+  background: #FFBE99;
+  border: 1.5px solid #262626;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* الكارت الدخلاني اللي فيه المعلومات */
+.qualification-box {
+  background: #FFF9F5;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 4px 4px 0px 0px #262626;
+}
+
+.qualification-box h4 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  color: #262626;
+}
+
+.qualification-box p {
+  font-size: 15px;
+  color: #4C4C4C;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* للموبايل يولي كارت واحد في السطر */
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: 1fr; }
+}

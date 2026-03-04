@@ -1,0 +1,94 @@
+.history-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.history-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #ffffff;
+  border: 2px solid #262626;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 8px 8px 0px 0px #262626;
+  position: relative;
+}
+
+/* الخط المنقط العمودي */
+.history-container::before {
+  content: '';
+  position: absolute;
+  left: 50px; /* مكان الخط */
+  top: 60px;
+  bottom: 60px;
+  border-left: 2px dashed #FFBE99;
+  z-index: 1;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* صندوق السنة مع المربعات */
+.year-box {
+  background: white;
+  border: 2px solid #262626;
+  border-radius: 12px;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 4px 4px 0px 0px #262626;
+  min-width: 160px;
+}
+
+/* المربعات الملونة اللي حدا السنة */
+.mini-pattern {
+  display: grid;
+  grid-template-columns: repeat(3, 8px);
+  gap: 3px;
+}
+
+.mini-dot { width: 8px; height: 8px; border-radius: 2px; }
+.mini-dot.bk { background: #262626; }
+.mini-dot.or { background: #FFBE99; }
+
+.year-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #262626;
+}
+
+/* محتوى النص */
+.history-content {
+  text-align: left;
+}
+
+.history-content h3 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  color: #262626;
+}
+
+.history-content p {
+  font-size: 15px;
+  color: #4C4C4C;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .history-container::before { left: 30px; }
+  .timeline-item { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .history-container { padding: 40px 20px; }
+}

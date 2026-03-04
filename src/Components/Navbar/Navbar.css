@@ -64,10 +64,7 @@
   font-size: 14px;
 }
 
-/* الرابط النشط (Home) باللون البيج فاتح */
-.nav-menu li.active {
-  background-color: #FFF0E5;
-}
+
 
 /* 4. زر Contact في الأخير */
 .nav-contact {
