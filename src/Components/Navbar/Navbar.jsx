@@ -23,13 +23,13 @@ const Navbar = () => {
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <Link to="/academics">Academics</Link>
+            <Link to="/Academics">Academics</Link>
           </li>
           <li>
-            <Link to="/admissions">Admissions</Link>
+            <Link to="/Admissions">Admissions</Link>
           </li>
           <li>
-            <Link to="/student-life">Student Life</Link>
+            <Link to="/Student_life">Student Life</Link>
           </li>
         </ul>
 

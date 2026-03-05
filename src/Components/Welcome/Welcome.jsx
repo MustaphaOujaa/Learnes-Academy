@@ -1,7 +1,7 @@
 import React from 'react';
 import './Welcome.css';
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <section className="hero-section">
       <div className="hero-card">
@@ -36,18 +36,14 @@ const Welcome = () => {
         <div className="hero-content-wrapper">
           <div className="hero-left">
             <div className="badge-container">
-              <span className="overview-badge">Overview</span>
+              <span className="overview-badge">{props.btn}</span>
             </div>
-            <h1 className="hero-title">Welcome to Little Learners Academy</h1>
+            <h1 className="hero-title">{props.welcome}</h1>
           </div>
 
           <div className="hero-right">
             <p className="hero-paragraph">
-              A leading kinder garden school dedicated to providing a nurturing and stimulating 
-              environment for young learners. With a commitment to excellence in early education, 
-              we believe in shaping curious minds and building a strong foundation for a lifelong 
-              love of learning. Our holistic approach fosters intellectual, social, emotional, 
-              and physical development, ensuring that each child reaches their full potential.
+              {props.text}
             </p>
           </div>
         </div>

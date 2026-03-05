@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* الحاوية الكبرى */
+.learn-section {
+  background-color: #FFF9F5; /* نفس لون الخلفية في الصورة */
+  padding: 80px 5%;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+.learn-header {
+  margin-bottom: 60px;
+}
+
+/* التاج الصغير (Badge) */
+.learn-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 2px solid #1A1A1A;
+  border-radius: 8px;
+  background: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.learn-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin: 0;
+}
+
+.learn-subtitle {
+  max-width: 800px;
+  margin: 20px auto 0;
+  color: #4C4C4C;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* الشبكة: 3 أعمدة (3 فوق و3 تحت) */
+/* ... الكود السابق ... */
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* القيمة الأولى (80px) هي المسافة بين الصفوف (Vertical Gap) */
+  /* القيمة الثانية (30px) هي المسافة بين الأعمدة (Horizontal Gap) */
+  gap: 80px 30px; 
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* ... باقي الكود كيبقا هو هو ... */
+
+.card-container {
+  position: relative;
+  width: 100%;
+}
+
+/* الظل الأسود الصلب (Hard Shadow) */
+.card-shadow-layer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+/* جسم البطاقة الرئيسي */
+.card-main-body {
+  position: relative;
+  background: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 20px;
+  padding: 45px 25px 30px 25px; /* Padding علوي كبير للنتوء */
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* توسيط المحتوى */
+}
+
+/* النتوء الصغير فوق الصورة */
+.tab-decorator {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 10px;
+  background-color: #FFEFE5;
+  border: 2px solid #1A1A1A;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+/* إطار الصورة (هنا التحكم في القياس) */
+.image-frame {
+  width: 90%; /* عرض الصورة أصغر من عرض الكارد بـ 10% */
+  aspect-ratio: 1.5 / 1; /* قياس مستطيل متناسق */
+  border: 2px solid #1A1A1A;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  background-color: #F8F8F8;
+}
+
+.subject-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* لضمان عدم تمطيط الصورة */
+  display: block;
+}
+
+/* النصوص */
+.text-content {
+  text-align: center;
+}
+
+.subject-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1A1A1A;
+}
+
+.subject-description {
+  font-size: 15px;
+  color: #595959;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* التجاوب (Responsive) */
+@media (max-width: 1024px) {
+  .learn-grid { grid-template-columns: repeat(2, 1fr); } /* 2 في الصف للتابلت */
+}
+
+@media (max-width: 680px) {
+  .learn-grid { grid-template-columns: 1fr; } /* 1 في الصف للموبايل */
+  .learn-title { font-size: 32px; }
+}

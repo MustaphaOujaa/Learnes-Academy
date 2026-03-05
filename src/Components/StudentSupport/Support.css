@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
+
+.support-section {
+  background-color: #FFF9F5;
+  padding: 80px 5%;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+.support-header {
+  margin-bottom: 80px;
+}
+
+.support-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #1A1A1A;
+  border-radius: 8px;
+  background: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.support-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1A1A1A;
+}
+
+.support-subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4C4C4C;
+  line-height: 1.6;
+}
+
+/* الشبكة بـ 3 أعمدة متساوية */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 30px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.support-card-wrapper {
+  position: relative;
+}
+
+/* الظل الأسود الصلب */
+.support-card-shadow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.support-card {
+  position: relative;
+  background-color: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  padding: 60px 30px 40px; /* مساحة للفراغ العلوي */
+  z-index: 2;
+  height: 100%;
+  text-align: left;
+}
+
+/* الأيقونة المرفوعة (Floating Icon) */
+.support-icon-box {
+  position: absolute;
+  top: -28px;
+  left: 25px;
+  width: 56px;
+  height: 56px;
+  background-color: #FFEFE5;
+  border: 2px solid #1A1A1A;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.service-h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1A1A1A;
+}
+
+.service-p {
+  color: #595959;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive لضمان الخدمة على الموبايل */
+@media (max-width: 1024px) {
+  .support-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .support-grid { grid-template-columns: 1fr; gap: 60px 0; }
+  .support-title { font-size: 32px; }
+}
