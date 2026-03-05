@@ -49,16 +49,16 @@ const eventList = [
       <div className="learn-grid">
         {eventList.map((eventL, index) => (
           <div key={index} className="card-container">
-            {/* الظل الأسود الصلب (Hard Shadow) */}
+            
             <div className="card-shadow-layer"></div>
             
             <div className="card-main-body">
-              {/* النتوء الصغير (The Tab) بنفس لون الصورة */}
+              
               <div className="tab-decorator"></div>
               
-              {/* إطار الصورة بقياس ثابت 16:10 */}
+              
               <div className="image-frame">
-                {/* ضع رابط صورتك هنا مكان الـ src */}
+                
                 <img 
                   src={eventL.img}
                   alt={eventL.title} 

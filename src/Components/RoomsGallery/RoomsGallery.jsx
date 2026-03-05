@@ -72,7 +72,7 @@ const RoomsGallery = () => {
       newIndex = (currentIndex - 1 + rooms.length) % rooms.length;
     }
     
-    // إذا كان المستخدم في وضع All، الأسهم تحوله لوضع الغرفة الواحدة للتصفح
+   
     setActiveTab(rooms[newIndex]);
   };
 
@@ -116,7 +116,7 @@ const RoomsGallery = () => {
                   <p className="room-desc">{galleryData[key].description}</p>
                 </div>
                 <div className="nav-arrows">
-                  {/* أضفنا الـ onClick هنا وتمرير المفتاح الحالي */}
+               
                   <button className="arrow-btn" onClick={() => handleArrowClick('prev', key)}>←</button>
                   <button className="arrow-btn" onClick={() => handleArrowClick('next', key)}>→</button>
                 </div>

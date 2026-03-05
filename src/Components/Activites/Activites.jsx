@@ -48,12 +48,12 @@ const Activites = () => {
       <div className="activities-grid">
         {activities.map((item, index) => (
           <div key={index} className="activity-card-container">
-            {/* الظل الأسود الصلب */}
+            
             <div className="activity-shadow"></div>
             
-            {/* الكارد الرئيسي */}
+           
             <div className="activity-card">
-              {/* الأيقونة العلوية المنفصلة */}
+            
               <div className="activity-icon-box">
                 {item.icon}
               </div>

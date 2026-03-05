@@ -30,16 +30,16 @@ const subjects = [
       <div className="learn-grid">
         {subjects.map((subject, index) => (
           <div key={index} className="card-container">
-            {/* الظل الأسود الصلب (Hard Shadow) */}
+          
             <div className="card-shadow-layer"></div>
             
             <div className="card-main-body">
-              {/* النتوء الصغير (The Tab) بنفس لون الصورة */}
+             
               <div className="tab-decorator"></div>
               
-              {/* إطار الصورة بقياس ثابت 16:10 */}
+              
               <div className="image-frame">
-                {/* ضع رابط صورتك هنا مكان الـ src */}
+                
                 <img 
                   src={subject.img}
                   alt={subject.title} 

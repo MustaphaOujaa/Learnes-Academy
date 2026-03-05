@@ -17,7 +17,7 @@ const History = () => {
       <div className="history-container">
         {historyData.map((item, index) => (
           <div key={index} className="timeline-item">
-            {/* صندوق السنة */}
+          
             <div className="year-box">
               <div className="mini-pattern">
                 {[...Array(9)].map((_, i) => (
@@ -27,7 +27,7 @@ const History = () => {
               <span className="year-text">{item.year}</span>
             </div>
 
-            {/* النص */}
+            
             <div className="history-content">
               <h3>{item.title}</h3>
               <p>{item.desc}</p>

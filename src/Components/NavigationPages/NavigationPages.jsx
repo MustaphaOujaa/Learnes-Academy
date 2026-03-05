@@ -22,7 +22,7 @@ const NavigationPages = () => {
           <div className="page-card" key={index}>
             <h2>{page.title}</h2>
             
-            {/* الخط المقطع مع الدوائر */}
+            
             <div className="divider-container">
               <div className="dot"></div>
               <div className="dashed-line"></div>

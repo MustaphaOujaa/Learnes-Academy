@@ -48,16 +48,16 @@ const AdmissionProcess = () => {
       <div className="steps-grid">
         {steps.map((step, index) => (
           <div key={index} className="step-item">
-            {/* الجزء الخاص برقم الخطوة */}
+        
             <div className="number-container">
               <div className="number-box-shadow"></div>
               <div className="number-box">{step.number}</div>
             </div>
 
-            {/* الخط البرتقالي الرابط */}
+            
             <div className="orange-connector"></div>
 
-            {/* بطاقة المحتوى */}
+        
             <div className="card-container">
               <div className="card-shadow"></div>
               <div className="card-content">

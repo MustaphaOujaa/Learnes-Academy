@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Jennifer B",
-      avatar: "👩‍💼", // تقدر تبدلها بـ <img src={...} />
+      avatar: "👩‍💼", 
       rating: "⭐⭐⭐⭐⭐",
       text: "Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!"
     },

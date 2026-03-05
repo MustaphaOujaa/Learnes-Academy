@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar-wrapper">
       <div className="navbar-main">
         <div className="logo-section">
-          <span className="logo-icon">🔸</span>
+          <span className="logo-icon"></span>
           <span className="logo-text">Little Learners</span>
         </div>
 

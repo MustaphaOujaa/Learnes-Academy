@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Faq.css';
 
 const FAQ = () => {
-  // السؤال الأول مفتوح افتراضياً (index 0)
+
   const [openIndex, setOpenIndex] = useState(0);
 
   const faqData = [

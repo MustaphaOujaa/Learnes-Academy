@@ -7,7 +7,7 @@ const Team= () => {
       name: "Ms. Sarah Anderson",
       role: "Bachelor's Degree in Early Childhood Education",
       desc: "Ms. Sarah is a passionate educator with over 10 years of experience in guiding young minds. Her warm and nurturing approach creates a welcoming classroom environment.",
-      img: "https://randomuser.me/api/portraits/women/44.jpg" // مثال لصورة
+      img: "https://randomuser.me/api/portraits/women/44.jpg" 
     },
     {
       name: "Mr. David Roberts",

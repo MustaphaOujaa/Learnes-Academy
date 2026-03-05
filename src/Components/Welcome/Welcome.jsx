@@ -5,7 +5,7 @@ const Welcome = (props) => {
   return (
     <section className="hero-section">
       <div className="hero-card">
-        {/* المربعات الملونة في الزاوية */}
+        
         <div className="hero-pattern">
           <div className="pattern-column">
             <div className="square black"></div>
