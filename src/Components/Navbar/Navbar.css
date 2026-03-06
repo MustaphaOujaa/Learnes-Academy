@@ -2,86 +2,168 @@
 
 .navbar-wrapper {
   background-color: #FFF5F0; 
-  padding: 20px 5%;
-  width: 90%;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* سنطراج ديال النافبار كاملة */
 }
 
 .navbar-main {
+  width: 92%; /* العرض ف الصفحة */
   max-width: 1400px;
-  margin: 0 auto;
   display: flex;
-  align-items: stretch; /* باش العناصر كاملين ياخدو نفس الطول */
+  align-items: stretch;
   background: white;
-  border: 2px solid #1A1A1A; /* الإطار الخارجي الأسود */
+  border: 2px solid #1A1A1A;
   border-radius: 12px;
-  overflow: hidden; /* باش الخلفيات ما تخرجش على الإطار */
+  overflow: hidden;
 }
 
-/* 1. قسم اللوغو */
 .logo-section {
-  background-color: #FF8A5B; /* لون برتقالي غامق */
+  background-color: #FF8A5B; /* برتقالي */
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 15px 25px;
   border-right: 2px solid #1A1A1A;
-  color: #1A1A1A;
 }
 
 .logo-text {
   font-weight: 800;
+  color: #1A1A1A;
   white-space: nowrap;
 }
 
-/* 2. الفراغ اللي ف الوسط */
 .nav-spacer {
-  flex-grow: 1; /* كياخد كاع المساحة الخاوية */
+  flex-grow: 1;
 }
 
-/* 3. منيو الروابط */
 .nav-menu {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-left: 2px solid #1A1A1A;
 }
 
 .nav-menu li {
-  border-right: 2px solid #1A1A1A;
-  display: flex;
-  align-items: center;
+  border-left: 2px solid #1A1A1A;
 }
 
 .nav-menu li a {
   text-decoration: none;
   color: #1A1A1A;
   font-weight: 600;
-  padding: 0 25px;
+  padding: 0 20px;
   height: 100%;
   display: flex;
   align-items: center;
   font-size: 14px;
 }
 
-
-
-/* 4. زر Contact في الأخير */
 .nav-contact {
   background-color: #FFB088; /* برتقالي فاتح */
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 25px;
+  border-left: 2px solid #1A1A1A;
 }
 
 .nav-contact a {
   text-decoration: none;
   color: #1A1A1A;
   font-weight: 700;
-  font-size: 14px;
 }
 
-/* Hover Effects */
-.nav-menu li a:hover {
-  background-color: #FFF0E5;
+/* --- زر الموبايل (Hamburger) --- */
+.mobile-menu-btn {
+  display: none; /* مخفي ف الكمبيوتر */
+  background-color: #FFF5F0; /* خلفية باهتة بحال الصورة */
+  border: none;
+  border-left: 2px solid #1A1A1A;
+  padding: 0 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #1A1A1A;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+/* --- التجاوب مع الموبايل --- */
+@media (max-width: 1024px) {
+  .nav-menu, .nav-contact {
+    display: none; /* إخفاء العناصر الزائدة */
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-main {
+    height: 70px; /* تحديد طول ثابت للموبايل */
+  }
+}
+/* ... الكود القديم ديال الديكستوب يبقى كما هو ... */
+
+.mobile-only {
+  display: none;
+}
+
+/* --- التعديلات الخاصة بالموبايل --- */
+@media (max-width: 1024px) {
+  .nav-contact {
+    display: none; /* كنخفيو الزر الأصلي */
+  }
+
+  .mobile-only {
+    display: flex; /* كنبينو رابط Contact داخل المينو */
+  }
+
+  .nav-menu {
+    display: none; /* مخفية فالعادي */
+    position: absolute;
+    top: 90px; /* تحت النافبار مباشرة */
+    left: 4%;
+    width: 92%;
+    background: white;
+    flex-direction: column;
+    border: 2px solid #1A1A1A;
+    border-radius: 12px;
+    z-index: 999;
+    box-shadow: 6px 6px 0px 0px #1A1A1A; /* نفس الستايل ديال الكارطات */
+  }
+
+  /* فاش كنزيدو كلاص open كاتبيا المينو */
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    border-left: none;
+    border-bottom: 2px solid #1A1A1A;
+    width: 100%;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-menu li a {
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

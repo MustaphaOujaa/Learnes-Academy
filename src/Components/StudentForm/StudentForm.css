@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* لجعل كل العناصر في وسط الصفحة تماماً */
+.page-wrapper {
+  background-color: #FFF5F0; /* لون الخلفية الوردي الفاتح جداً */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  text-align: center;
+}
+
+/* الهيدر */
+.badge-container {
+  margin-bottom: 20px;
+}
+
+.badge-text {
+  border: 1.5px solid #262626;
+  padding: 6px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: white;
+}
+
+.title {
+  font-size: 44px;
+  color: #1A1A1A;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.description {
+  color: #4C4C4D;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+/* الكارت الأساسي مع الحدود السوداء */
+.form-card {
+  background: white;
+  border: 2px solid #262626;
+  border-radius: 16px;
+  padding: 80px 50px 50px;
+  position: relative;
+  box-shadow: 0px 10px 0px rgba(0,0,0,0.02);
+}
+
+/* أيقونات السوشيال ميديا في الأعلى */
+.social-header {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon-box {
+  background-color: #FFEFE7; /* نفس لون المربع في الصورة */
+  border: 2px solid #262626;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  color: #1A1A1A;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icon-box:hover {
+  transform: translateY(-3px);
+}
+
+/* تقسيم الحقول */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-field label {
+  font-weight: 600;
+  color: #4C4C4D;
+  font-size: 15px;
+}
+
+.input-field input, 
+.input-field textarea, 
+.input-field select {
+  background-color: #FCFCFD;
+  border: 1px solid #F1F1F3;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #666;
+  outline: none;
+  font-family: inherit;
+}
+
+.input-field input:focus {
+  border-color: #FFB085;
+}
+
+textarea {
+  height: 160px;
+  resize: none;
+}
+
+/* الزر البرتقالي المشرق */
+.btn-submit {
+  background-color: #FFB085; /* لون مشمشي مطابق للصورة */
+  color: #262626;
+  border: 1px solid #262626;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #ff9d66;
+  box-shadow: 0px 4px 0px #262626;
+}
+
+/* التجاوب مع الجوال */
+@media (max-width: 768px) {
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .form-card {
+    padding: 60px 20px 30px;
+  }
+}
