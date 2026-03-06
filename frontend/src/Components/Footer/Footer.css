@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg-color: #ffffff;
+  --text-main: #1A1A1A;
+  --text-muted: #4C4C4D;
+  --icon-bg: #FFFFFF; /* خلفية بيضاء للأيقونات كما في الصورة */
+  --border-color: #E4E4E7;
+  --footer-border: #262626;
+}
+
+.footer-container {
+  font-family: 'Outfit', sans-serif;
+  padding: 40px 60px 15px; /* صغرت الـ padding باش يصغر الفوتر */
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  border: 1px solid var(--footer-border);
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 1200px; /* باش ما يجيش عريض بزاف */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-brand {
+  flex: 1.2;
+  max-width: 320px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.logo i {
+  font-size: 22px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+/* --- تنسيق الإيميل والهاتف والموقع --- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-main);
+}
+
+.contact-item i {
+  background: var(--icon-bg);
+  border: 1px solid #333; /* الإطار اللي كيبان في الصورة */
+  padding: 6px;
+  border-radius: 6px;
+  width: 28px; /* حجم ثابت باش يجي مربع */
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+/* --- تنسيق الروابط --- */
+.footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.link-group h4 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.link-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-group ul li {
+  margin-bottom: 8px;
+}
+
+.link-group ul li a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.link-group ul li a:hover {
+  color: #000;
+}
+
+/* --- الجزء السفلي (Legal & Social) --- */
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-size: 13px;
+}
+
+.separator {
+  color: #000;
+  font-weight: 300;
+}
+
+.social-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.social-box {
+  background: #FFE4D6; /* اللون الخوخي الفاتح للأيقونات الاجتماعية */
+  border: 1px solid #000;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.copyright {
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* التجاوب مع الهواتف */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
