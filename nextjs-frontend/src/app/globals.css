@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neo-orange: #FF8A5B;
+  --color-neo-bg: #FFF5F0;
+  --color-neo-text: #1A1A1A;
+  --color-neo-text-gray: #4C4C4C;
+
+  --shadow-neo: 6px 6px 0px #333;
+
+  --border-width-neo: 1px;
+}
+
+body {
+  background-color: var(--color-neo-bg);
+  color: var(--color-neo-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
