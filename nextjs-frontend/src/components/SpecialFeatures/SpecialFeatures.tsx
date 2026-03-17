@@ -35,7 +35,7 @@ const featuresData = [
 
 const SpecialFeatures = () => {
   return (
-    <div className="bg-[#F8F6F1] py-[60px] px-5 font-sans text-[#262626]">
+    <div id="special-features" className="bg-[#F8F6F1] py-[60px] px-5 font-sans text-[#262626]">
       <div className="max-w-[1200px] mx-auto text-center">
         
         <div className="inline-block py-2 px-[18px] border-[1.5px] border-[#262626] rounded-lg mb-[30px] bg-white">

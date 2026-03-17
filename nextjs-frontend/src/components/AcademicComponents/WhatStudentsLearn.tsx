@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 const WhatStudentsLearn = () => {
   const subjects = [
-    { title: "Language Arts", desc: "Reading, writing, storytelling, and communication skills.", img: "/assets/images/lang.jpeg" },
-    { title: "Mathematics", desc: "Number sense, basic operations, problem-solving, and logic.", img: "/assets/images/math.jpeg" },
-    { title: "Science", desc: "Exploring the natural world through hands-on experiments and investigations.", img: "/assets/images/snc.jpeg" },
-    { title: "Social Studies", desc: "Cultivating an understanding of diverse cultures and communities.", img: "/assets/images/social.jpeg" },
-    { title: "Arts and Crafts", desc: "Encouraging creativity through various art forms and crafts.", img: "/assets/images/arts.jpeg" },
-    { title: "Physical Education", desc: "Promoting physical fitness, coordination, and teamwork.", img: "/assets/images/physical.jpeg" },
+    { title: "Language Arts", desc: "Reading, writing, storytelling, and communication skills.", img: "/assets/images/language-arts.png" },
+    { title: "Mathematics", desc: "Number sense, basic operations, problem-solving, and logic.", img: "/assets/images/mathematics.png" },
+    { title: "Science", desc: "Exploring the natural world through hands-on experiments and investigations.", img: "/assets/images/science.png" },
+    { title: "Social Studies", desc: "Cultivating an understanding of diverse cultures and communities.", img: "/assets/images/social-studies.png" },
+    { title: "Arts and Crafts", desc: "Encouraging creativity through various art forms and crafts.", img: "/assets/images/arts-crafts.png" },
+    { title: "Physical Education", desc: "Promoting physical fitness, coordination, and teamwork.", img: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=600&auto=format&fit=crop" },
   ];
 
   return (

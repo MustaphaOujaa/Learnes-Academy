@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Welcome = ({ btn, welcome, text }: { btn: string, welcome: string, text: string }) => {
+const Welcome = ({ btn, welcome, text, children }: { btn: string, welcome: string, text: string, children?: React.ReactNode }) => {
   return (
     <section className="bg-[#FFF9F5] py-[100px] px-10 flex justify-center font-sans">
       <div className="relative bg-white border-2 border-[#262626] rounded-xl max-w-[1200px] w-full p-[60px_20px] lg:p-[80px_50px] shadow-[6px_6px_0px_#262626] overflow-hidden">
@@ -48,6 +48,7 @@ const Welcome = ({ btn, welcome, text }: { btn: string, welcome: string, text: s
             <p className="text-base leading-[1.6] text-[#4C4C4C] m-0">
               {text}
             </p>
+            {children}
           </div>
         </div>
       </div>

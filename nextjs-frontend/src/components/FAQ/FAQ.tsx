@@ -18,7 +18,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="bg-neo-bg py-[80px] px-[5%] font-sans">
+    <section id="faq" className="bg-neo-bg py-[80px] px-[5%] font-sans">
       <div className="text-center mb-[60px]">
         <span className="inline-block py-2 px-[18px] bg-white border-2 border-[#1A1A1A] rounded-lg font-semibold text-sm mb-5">
           Solutions For The Doubts

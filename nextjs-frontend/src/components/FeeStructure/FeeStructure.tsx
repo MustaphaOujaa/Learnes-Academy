@@ -38,7 +38,7 @@ const FeeStructure = () => {
                   <td className="border border-[#F1E5D1] p-5 text-[#333]">$12</td>
                 </tr>
                 <tr>
-                  <td className="border border-[#F1E5D1] p-5 text-[#333]">Pre - Kindergartens</td>
+                  <td className="border border-[#F1E5D1] p-5 text-[#333]">Pre-Kindergarten</td>
                   <td className="border border-[#F1E5D1] p-5 text-[#333]">3 - 4 Years</td>
                   <td className="border border-[#F1E5D1] p-5 text-[#333]">$2,686</td>
                   <td className="border border-[#F1E5D1] p-5 text-[#333]">$220</td>

@@ -14,11 +14,35 @@ const Team = () => {
       role: "Master's Degree in Elementary Education",
       desc: "With a strong background in elementary education, Mr. David brings a creative and interactive teaching style to his classroom. His enthusiasm for learning inspires students.",
       img: "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      name: "Ms. Emily Hernandez",
+      role: "Diploma in Child Psychology",
+      desc: "Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide targeted support. Her warm smiles foster a strong sense of belonging.",
+      img: "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      name: "Mr. Michael Turner",
+      role: "Bachelor's Degree in Physical Education",
+      desc: "Mr. Michael's passion for physical fitness and sports plays an essential role in keeping students active and healthy. He brings boundless energy and enthusiasm.",
+      img: "https://randomuser.me/api/portraits/men/46.jpg"
+    },
+    {
+      name: "Ms. Jessica Lee",
+      role: "Master's Degree in Special Education",
+      desc: "Ms. Jessica's background in special education ensures that all children, regardless of their abilities, receive the support they need to succeed.",
+      img: "https://randomuser.me/api/portraits/women/68.jpg"
+    },
+    {
+      name: "Mr. William Parker",
+      role: "Bachelor's Degree in Fine Arts",
+      desc: "Mr. William's background in fine arts inspires creativity and self-expression. He encourages the exploration of various art forms.",
+      img: "https://randomuser.me/api/portraits/men/55.jpg"
     }
   ];
 
   return (
-    <section className="bg-[#FFF9F5] py-[80px] px-5 text-center font-sans">
+    <section id="teachers" className="bg-[#FFF9F5] py-[80px] px-5 text-center font-sans">
       <div className="inline-block border border-[#262626] p-[5px_15px] rounded-md font-medium bg-white text-[#262626]">
         Our Teachers With Expertise
       </div>

@@ -87,7 +87,7 @@ const RoomsGallery = () => {
   const displayKeys = activeTab === "All" ? rooms : [activeTab];
 
   return (
-    <section className="bg-[#FFF9F5] py-[80px] px-[5%] font-sans">
+    <section id="gallery" className="bg-[#FFF9F5] py-[80px] px-[5%] font-sans">
       <div className="text-center mb-[50px]">
         <span className="inline-block py-1.5 px-4 border-2 border-[#1A1A1A] rounded-lg bg-white font-medium mb-[15px] text-[#1A1A1A]">Our Gallery</span>
         <h2 className="text-[42px] font-extrabold m-0 text-[#1A1A1A]">Our Rooms Gallery</h2>

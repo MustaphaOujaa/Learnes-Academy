@@ -1,3 +1,6 @@
+// Ce fichier définit le layout racine de l'application Next.js.
+// Il inclut la barre de navigation (Navbar), le pied de page (Footer) et gère les polices de caractères ainsi que les métadonnées globales.
+// Tous les composants de page seront rendus à l'intérieur de ce layout.
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

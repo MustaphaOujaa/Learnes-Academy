@@ -1,3 +1,4 @@
+// Page d'accueil principale qui assemble les sections clés du site.
 import Hero from "@/components/Hero/Hero";
 import Benefits from "@/components/Benefits/Benefits";
 import Testimonials from "@/components/Testimonials/Testimonials";
